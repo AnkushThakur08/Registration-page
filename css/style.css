@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+}
+body {
+  background: #d5d5d5;
+  height: 100vh;
+  font-family: "Roboto", "serif";
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100%;
+  position: relative;
+}
+
+.flex {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-top {
+  height: 500px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.mockup {
+  height: 500px;
+}
+
+.form {
+  width: 100%;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.form-section {
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 50px;
+  width: 75%;
+}
+
+.form-section h1 {
+  font-size: 40px;
+  margin: 25px 0;
+  color: #343333;
+  text-transform: capitalize;
+}
+
+input {
+  padding: 10px 30px;
+  font-size: 15px;
+  border-radius: 8px;
+  border: 1px solid #a7a7a7;
+  margin-bottom: 20px;
+  width: 100%;
+  margin: 6px 10px;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.btn {
+  font-size: 25px;
+  width: 100%;
+  padding: 10px 0px;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  background-color: #f59e2e;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+  margin-top: 15px;
+}
+
+.btn-facebook {
+  background-color: #354c8d;
+}
+
+.btn-twitter {
+  background-color: #009fe9;
+}
+
+@media screen and (max-width: 900px) {
+  .mockup {
+    display: none;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  .form-section {
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+
+  input {
+    width: 83%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .form-section h1 {
+    font-size: 30px;
+  }
+}
